@@ -28,11 +28,12 @@ namespace Calculator
             inputbox.Text += @"+";
             _c.Action = '+';
             
+
         }
 
         private void resultbutton_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void minusbutton_Click(object sender, EventArgs e)
@@ -52,7 +53,8 @@ namespace Calculator
 
         private void sqrtbutton_Click(object sender, EventArgs e)
         {
-
+            dynamic result=Math.Sqrt(double.Parse(inputbox.Text));
+            inputbox.Text = result.ToString();
         }
 
         private void derivedbutton_Click(object sender, EventArgs e)
